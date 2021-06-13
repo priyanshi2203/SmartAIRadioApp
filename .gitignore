@@ -8,6 +8,7 @@
 .buildlog/
 .history
 .svn/
+.
 
 # IntelliJ related
 *.iml
@@ -30,6 +31,7 @@
 .pub-cache/
 .pub/
 /build/
+api_key.dart
 
 # Web related
 lib/generated_plugin_registrant.dart

@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:musicplayer/model/radio.dart';
 import 'package:musicplayer/utils/ai_util.dart';
+import 'package:musicplayer/api_key.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class HomePage extends StatefulWidget {
@@ -53,9 +54,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   setupAlan() {
-    AlanVoice.addButton(
-        "5bf556f41f56d0300f53b25e436ae3e32e956eca572e1d8b807a3e2338fdd0dc/stage/stage",
-        buttonAlign: AlanVoice.BUTTON_ALIGN_RIGHT);
+    AlanVoice.addButton(API_KEY, buttonAlign: AlanVoice.BUTTON_ALIGN_RIGHT);
     AlanVoice.callbacks.add((Command) => _handleCommand(Command.data));
   }
 
