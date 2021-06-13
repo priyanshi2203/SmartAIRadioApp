@@ -1,4 +1,4 @@
-# musicplayer
+# Smart Ai Radio App
 
 A new Flutter project.
 
